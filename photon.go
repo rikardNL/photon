@@ -47,7 +47,6 @@ func (fn appHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if e := fn(w, r); e != nil {
 		log.Printf("Handler error: status code: %d, message: %s, underlying error: %#v",
 			e.Code, e.Message, e.Error)
-
 		http.Error(w, e.Message, e.Code)
 	}
 }
