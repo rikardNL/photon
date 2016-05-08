@@ -1,5 +1,4 @@
 PHOTON
 ======
 
-Service for storing images
-
+Image service
